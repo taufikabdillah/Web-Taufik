@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meeting Room - Mandarin Oriental</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(135deg, #f0f4f8, #e4eaf0);
+      color: #333;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 40px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      display: flex;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .meeting-img {
+      width: 50%;
+      border-radius: 16px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .meeting-img:hover {
+      transform: scale(1.02);
+    }
+
+    .text-content {
+      width: 50%;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.7;
+      color: #555;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background: #2c3e50;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .back-button:hover {
+      background: #1a252f;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        padding: 30px;
+      }
+
+      .meeting-img, .text-content {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="img/meeting_room.jpg" alt="Meeting Room" class="meeting-img" />
+
+    <div class="text-content">
+      <h1>Meeting Room at Mandarin Oriental Hotel</h1>
+      <p>
+        Ruang pertemuan di Mandarin Oriental Hotel dirancang dengan sentuhan elegan dan teknologi terkini untuk memastikan setiap acara berjalan lancar dan berkesan. 
+        Dilengkapi dengan sistem audiovisual canggih, pencahayaan yang dapat disesuaikan, serta kursi ergonomis yang nyaman, ruang ini sangat ideal untuk rapat bisnis, seminar, atau konferensi eksklusif.
+        Suasana tenang, layanan katering kelas dunia, dan fleksibilitas ruangan menjadikan meeting room kami pilihan sempurna bagi tamu yang menginginkan kombinasi antara produktivitas dan kemewahan.
+      </p>
+      <a href="home.html" class="back-button">← Back to Home</a>
+    </div>
+  </div>
+</body>
+</html>

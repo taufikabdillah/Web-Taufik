@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rooms at Mandarin Oriental</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(135deg, #f0f4f8, #e4eaf0);
+      color: #333;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      font-size: 32px;
+      color: #2c3e50;
+      margin-bottom: 40px;
+    }
+
+    .room-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .room-card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .room-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .room-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .room-description {
+      padding: 20px;
+    }
+
+    .room-description h2 {
+      font-size: 20px;
+      margin: 0 0 10px;
+      color: #2c3e50;
+    }
+
+    .room-description p {
+      font-size: 15px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .back-button {
+      display: block;
+      width: fit-content;
+      margin: 40px auto 0;
+      padding: 12px 24px;
+      background: #2c3e50;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .back-button:hover {
+      background: #1a252f;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Rooms at Mandarin Oriental Hotel</h1>
+    <div class="room-grid">
+      <!-- Room 1 -->
+      <div class="room-card">
+        <img src="img/room.jpg" alt="Luxury City View Room" />
+        <div class="room-description">
+          <h2>Luxury City View Room</h2>
+          <p>
+            Kamar mewah dengan pemandangan kota yang menakjubkan, dilengkapi tempat tidur king size dan interior elegan—ideal untuk pelancong bisnis dan rekreasi.
+          </p>
+        </div>
+      </div>
+
+      <!-- Room 2 -->
+      <div class="room-card">
+        <img src="img/room2.jpg" alt="Premier Marina Bay Room" />
+        <div class="room-description">
+          <h2>Premier Marina Bay Room</h2>
+          <p>
+            Nikmati pemandangan ikonik Marina Bay langsung dari balkon pribadi. Suasana tenang dan desain modern memberikan pengalaman menginap luar biasa.
+          </p>
+        </div>
+      </div>
+
+      <!-- Room 3 -->
+      <div class="room-card">
+        <img src="img/room4.jpg" alt="Executive Club Room" />
+        <div class="room-description">
+          <h2>Executive Club Room</h2>
+          <p>
+            Dilengkapi fasilitas eksklusif dan akses lounge pribadi, kamar ini cocok untuk tamu yang mencari kenyamanan ekstra dan pelayanan istimewa.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <a href="home.html" class="back-button">← Back to Home</a>
+  </div>
+</body>
+</html>
